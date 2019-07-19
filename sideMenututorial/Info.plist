@@ -41,5 +41,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Need consent to access your camera </string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Need consent to access your photo library </string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Need consent to access your location </string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Need consent to access your current location </string>
 </dict>
 </plist>
