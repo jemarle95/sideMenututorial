@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0374E4A222E0784F00AA7943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E4A122E0784F00AA7943 /* AppDelegate.swift */; };
-		0374E4A422E0784F00AA7943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E4A322E0784F00AA7943 /* ViewController.swift */; };
+		0374E4A422E0784F00AA7943 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E4A322E0784F00AA7943 /* LoginScreen.swift */; };
 		0374E4A722E0784F00AA7943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0374E4A522E0784F00AA7943 /* Main.storyboard */; };
 		0374E4A922E0785100AA7943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0374E4A822E0785100AA7943 /* Assets.xcassets */; };
 		0374E4AC22E0785100AA7943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0374E4AA22E0785100AA7943 /* LaunchScreen.storyboard */; };
+		0374E4B622E0ED8D00AA7943 /* PhoneValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E4B522E0ED8D00AA7943 /* PhoneValidationViewController.swift */; };
+		0374E4B822E0EE6700AA7943 /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E4B722E0EE6700AA7943 /* VerificationModel.swift */; };
+		0374E4BB22E0EFB600AA7943 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E4BA22E0EFB600AA7943 /* ValidationManager.swift */; };
+		0374E4BE22E0EFF200AA7943 /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E4BD22E0EFF200AA7943 /* VerifyAPI.swift */; };
+		0374E4C022E0F86E00AA7943 /* Configure.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0374E4BF22E0F86E00AA7943 /* Configure.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0374E49E22E0784F00AA7943 /* sideMenututorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sideMenututorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0374E4A122E0784F00AA7943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0374E4A322E0784F00AA7943 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0374E4A322E0784F00AA7943 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		0374E4A622E0784F00AA7943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0374E4A822E0785100AA7943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0374E4AB22E0785100AA7943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0374E4AD22E0785100AA7943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0374E4B522E0ED8D00AA7943 /* PhoneValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneValidationViewController.swift; sourceTree = "<group>"; };
+		0374E4B722E0EE6700AA7943 /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
+		0374E4BA22E0EFB600AA7943 /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		0374E4BD22E0EFF200AA7943 /* VerifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
+		0374E4BF22E0F86E00AA7943 /* Configure.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configure.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,9 @@
 		0374E49522E0784F00AA7943 = {
 			isa = PBXGroup;
 			children = (
+				0374E4BD22E0EFF200AA7943 /* VerifyAPI.swift */,
+				0374E4BC22E0EFBF00AA7943 /* Managers */,
+				0374E4B922E0EF8100AA7943 /* Model */,
 				0374E4A022E0784F00AA7943 /* sideMenututorial */,
 				0374E49F22E0784F00AA7943 /* Products */,
 			);
@@ -55,13 +68,31 @@
 			isa = PBXGroup;
 			children = (
 				0374E4A122E0784F00AA7943 /* AppDelegate.swift */,
-				0374E4A322E0784F00AA7943 /* ViewController.swift */,
+				0374E4B522E0ED8D00AA7943 /* PhoneValidationViewController.swift */,
+				0374E4A322E0784F00AA7943 /* LoginScreen.swift */,
 				0374E4A522E0784F00AA7943 /* Main.storyboard */,
 				0374E4A822E0785100AA7943 /* Assets.xcassets */,
 				0374E4AA22E0785100AA7943 /* LaunchScreen.storyboard */,
 				0374E4AD22E0785100AA7943 /* Info.plist */,
+				0374E4BF22E0F86E00AA7943 /* Configure.plist */,
 			);
 			path = sideMenututorial;
+			sourceTree = "<group>";
+		};
+		0374E4B922E0EF8100AA7943 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0374E4B722E0EE6700AA7943 /* VerificationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0374E4BC22E0EFBF00AA7943 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0374E4BA22E0EFB600AA7943 /* ValidationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +156,7 @@
 				0374E4AC22E0785100AA7943 /* LaunchScreen.storyboard in Resources */,
 				0374E4A922E0785100AA7943 /* Assets.xcassets in Resources */,
 				0374E4A722E0784F00AA7943 /* Main.storyboard in Resources */,
+				0374E4C022E0F86E00AA7943 /* Configure.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0374E4A422E0784F00AA7943 /* ViewController.swift in Sources */,
+				0374E4BB22E0EFB600AA7943 /* ValidationManager.swift in Sources */,
+				0374E4A422E0784F00AA7943 /* LoginScreen.swift in Sources */,
+				0374E4B622E0ED8D00AA7943 /* PhoneValidationViewController.swift in Sources */,
+				0374E4BE22E0EFF200AA7943 /* VerifyAPI.swift in Sources */,
+				0374E4B822E0EE6700AA7943 /* VerificationModel.swift in Sources */,
 				0374E4A222E0784F00AA7943 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
