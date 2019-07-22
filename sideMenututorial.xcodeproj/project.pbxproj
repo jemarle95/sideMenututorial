@@ -17,6 +17,11 @@
 		0374E4BB22E0EFB600AA7943 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E4BA22E0EFB600AA7943 /* ValidationManager.swift */; };
 		0374E4BE22E0EFF200AA7943 /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E4BD22E0EFF200AA7943 /* VerifyAPI.swift */; };
 		0374E4C022E0F86E00AA7943 /* Configure.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0374E4BF22E0F86E00AA7943 /* Configure.plist */; };
+		5442934A22E5C40500E9EE2E /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442934922E5C40500E9EE2E /* CustomCollectionViewCell.swift */; };
+		5442934E22E5C4D400E9EE2E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442934D22E5C4D400E9EE2E /* CustomTableViewCell.swift */; };
+		5442935022E5C53000E9EE2E /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442934F22E5C53000E9EE2E /* HomePageViewController.swift */; };
+		5442935222E5E42900E9EE2E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442935122E5E42900E9EE2E /* MenuViewController.swift */; };
+		5442935922E604C000E9EE2E /* CustomTableViewMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442935822E604C000E9EE2E /* CustomTableViewMenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		0374E4BA22E0EFB600AA7943 /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
 		0374E4BD22E0EFF200AA7943 /* VerifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
 		0374E4BF22E0F86E00AA7943 /* Configure.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configure.plist; sourceTree = "<group>"; };
+		5442934922E5C40500E9EE2E /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		5442934D22E5C4D400E9EE2E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		5442934F22E5C53000E9EE2E /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		5442935122E5E42900E9EE2E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		5442935822E604C000E9EE2E /* CustomTableViewMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewMenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,9 +58,11 @@
 		0374E49522E0784F00AA7943 = {
 			isa = PBXGroup;
 			children = (
-				0374E4BD22E0EFF200AA7943 /* VerifyAPI.swift */,
+				5442934C22E5C41E00E9EE2E /* Networking */,
+				5442934B22E5C40E00E9EE2E /* Custom Cells */,
 				0374E4BC22E0EFBF00AA7943 /* Managers */,
-				0374E4B922E0EF8100AA7943 /* Model */,
+				0374E4B922E0EF8100AA7943 /* Models */,
+				5442935322E5E43900E9EE2E /* View Controllers */,
 				0374E4A022E0784F00AA7943 /* sideMenututorial */,
 				0374E49F22E0784F00AA7943 /* Products */,
 			);
@@ -68,10 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				0374E4A122E0784F00AA7943 /* AppDelegate.swift */,
-				0374E4B522E0ED8D00AA7943 /* PhoneValidationViewController.swift */,
-				0374E4A322E0784F00AA7943 /* LoginScreen.swift */,
-				0374E4A522E0784F00AA7943 /* Main.storyboard */,
 				0374E4A822E0785100AA7943 /* Assets.xcassets */,
+				0374E4A522E0784F00AA7943 /* Main.storyboard */,
 				0374E4AA22E0785100AA7943 /* LaunchScreen.storyboard */,
 				0374E4AD22E0785100AA7943 /* Info.plist */,
 				0374E4BF22E0F86E00AA7943 /* Configure.plist */,
@@ -79,12 +89,12 @@
 			path = sideMenututorial;
 			sourceTree = "<group>";
 		};
-		0374E4B922E0EF8100AA7943 /* Model */ = {
+		0374E4B922E0EF8100AA7943 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				0374E4B722E0EE6700AA7943 /* VerificationModel.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		0374E4BC22E0EFBF00AA7943 /* Managers */ = {
@@ -93,6 +103,35 @@
 				0374E4BA22E0EFB600AA7943 /* ValidationManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		5442934B22E5C40E00E9EE2E /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5442935822E604C000E9EE2E /* CustomTableViewMenuCell.swift */,
+				5442934922E5C40500E9EE2E /* CustomCollectionViewCell.swift */,
+				5442934D22E5C4D400E9EE2E /* CustomTableViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		5442934C22E5C41E00E9EE2E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0374E4BD22E0EFF200AA7943 /* VerifyAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5442935322E5E43900E9EE2E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0374E4A322E0784F00AA7943 /* LoginScreen.swift */,
+				0374E4B522E0ED8D00AA7943 /* PhoneValidationViewController.swift */,
+				5442934F22E5C53000E9EE2E /* HomePageViewController.swift */,
+				5442935122E5E42900E9EE2E /* MenuViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,11 +207,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0374E4BB22E0EFB600AA7943 /* ValidationManager.swift in Sources */,
+				5442935222E5E42900E9EE2E /* MenuViewController.swift in Sources */,
 				0374E4A422E0784F00AA7943 /* LoginScreen.swift in Sources */,
+				5442935022E5C53000E9EE2E /* HomePageViewController.swift in Sources */,
+				5442935922E604C000E9EE2E /* CustomTableViewMenuCell.swift in Sources */,
+				5442934E22E5C4D400E9EE2E /* CustomTableViewCell.swift in Sources */,
 				0374E4B622E0ED8D00AA7943 /* PhoneValidationViewController.swift in Sources */,
 				0374E4BE22E0EFF200AA7943 /* VerifyAPI.swift in Sources */,
 				0374E4B822E0EE6700AA7943 /* VerificationModel.swift in Sources */,
 				0374E4A222E0784F00AA7943 /* AppDelegate.swift in Sources */,
+				5442934A22E5C40500E9EE2E /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
