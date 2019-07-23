@@ -22,6 +22,14 @@
 		5442935022E5C53000E9EE2E /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442934F22E5C53000E9EE2E /* HomePageViewController.swift */; };
 		5442935222E5E42900E9EE2E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442935122E5E42900E9EE2E /* MenuViewController.swift */; };
 		5442935922E604C000E9EE2E /* CustomTableViewMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442935822E604C000E9EE2E /* CustomTableViewMenuCell.swift */; };
+		5442935D22E7101F00E9EE2E /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442935C22E7101F00E9EE2E /* AboutPageViewController.swift */; };
+		5442936422E72BF800E9EE2E /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442936322E72BF800E9EE2E /* CustomNavController.swift */; };
+		5442936622E730D800E9EE2E /* SupportPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442936522E730D800E9EE2E /* SupportPageViewController.swift */; };
+		5442936922E748B100E9EE2E /* FAQPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442936822E748B100E9EE2E /* FAQPageViewController.swift */; };
+		5442936F22E74B1600E9EE2E /* SupportPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5442936E22E74B1600E9EE2E /* SupportPage.storyboard */; };
+		5442937222E74BD300E9EE2E /* AboutPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5442937022E74BD300E9EE2E /* AboutPage.storyboard */; };
+		5442937422E74C1A00E9EE2E /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442937322E74C1A00E9EE2E /* ProfilePageViewController.swift */; };
+		5442937722E74C4800E9EE2E /* ProfilePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5442937522E74C4800E9EE2E /* ProfilePage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +50,14 @@
 		5442934F22E5C53000E9EE2E /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		5442935122E5E42900E9EE2E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		5442935822E604C000E9EE2E /* CustomTableViewMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewMenuCell.swift; sourceTree = "<group>"; };
+		5442935C22E7101F00E9EE2E /* AboutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
+		5442936322E72BF800E9EE2E /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
+		5442936522E730D800E9EE2E /* SupportPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportPageViewController.swift; sourceTree = "<group>"; };
+		5442936822E748B100E9EE2E /* FAQPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQPageViewController.swift; sourceTree = "<group>"; };
+		5442936E22E74B1600E9EE2E /* SupportPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SupportPage.storyboard; sourceTree = "<group>"; };
+		5442937122E74BD300E9EE2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = sideMenututorial/Base.lproj/AboutPage.storyboard; sourceTree = "<group>"; };
+		5442937322E74C1A00E9EE2E /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
+		5442937622E74C4800E9EE2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = sideMenututorial/Base.lproj/ProfilePage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +74,8 @@
 		0374E49522E0784F00AA7943 = {
 			isa = PBXGroup;
 			children = (
+				5442936322E72BF800E9EE2E /* CustomNavController.swift */,
 				5442934C22E5C41E00E9EE2E /* Networking */,
-				5442934B22E5C40E00E9EE2E /* Custom Cells */,
 				0374E4BC22E0EFBF00AA7943 /* Managers */,
 				0374E4B922E0EF8100AA7943 /* Models */,
 				5442935322E5E43900E9EE2E /* View Controllers */,
@@ -79,9 +95,14 @@
 		0374E4A022E0784F00AA7943 /* sideMenututorial */ = {
 			isa = PBXGroup;
 			children = (
+				0374E4A322E0784F00AA7943 /* LoginScreen.swift */,
+				0374E4B522E0ED8D00AA7943 /* PhoneValidationViewController.swift */,
 				0374E4A122E0784F00AA7943 /* AppDelegate.swift */,
 				0374E4A822E0785100AA7943 /* Assets.xcassets */,
 				0374E4A522E0784F00AA7943 /* Main.storyboard */,
+				5442937022E74BD300E9EE2E /* AboutPage.storyboard */,
+				5442937522E74C4800E9EE2E /* ProfilePage.storyboard */,
+				5442936E22E74B1600E9EE2E /* SupportPage.storyboard */,
 				0374E4AA22E0785100AA7943 /* LaunchScreen.storyboard */,
 				0374E4AD22E0785100AA7943 /* Info.plist */,
 				0374E4BF22E0F86E00AA7943 /* Configure.plist */,
@@ -105,16 +126,6 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		5442934B22E5C40E00E9EE2E /* Custom Cells */ = {
-			isa = PBXGroup;
-			children = (
-				5442935822E604C000E9EE2E /* CustomTableViewMenuCell.swift */,
-				5442934922E5C40500E9EE2E /* CustomCollectionViewCell.swift */,
-				5442934D22E5C4D400E9EE2E /* CustomTableViewCell.swift */,
-			);
-			path = "Custom Cells";
-			sourceTree = "<group>";
-		};
 		5442934C22E5C41E00E9EE2E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,12 +137,65 @@
 		5442935322E5E43900E9EE2E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0374E4A322E0784F00AA7943 /* LoginScreen.swift */,
-				0374E4B522E0ED8D00AA7943 /* PhoneValidationViewController.swift */,
-				5442934F22E5C53000E9EE2E /* HomePageViewController.swift */,
-				5442935122E5E42900E9EE2E /* MenuViewController.swift */,
+				5442937822E74C6500E9EE2E /* ProfilePage ViewController */,
+				5442936A22E748B900E9EE2E /* FAQPage ViewController */,
+				5442936722E730E000E9EE2E /* SupportPage ViewController */,
+				5442935E22E7102A00E9EE2E /* AboutPage ViewController */,
+				5442935B22E70CE700E9EE2E /* HomePage ViewController */,
+				5442935A22E70CA400E9EE2E /* Menu ViewController */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5442935A22E70CA400E9EE2E /* Menu ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5442935122E5E42900E9EE2E /* MenuViewController.swift */,
+				5442935822E604C000E9EE2E /* CustomTableViewMenuCell.swift */,
+			);
+			path = "Menu ViewController";
+			sourceTree = "<group>";
+		};
+		5442935B22E70CE700E9EE2E /* HomePage ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5442934922E5C40500E9EE2E /* CustomCollectionViewCell.swift */,
+				5442934F22E5C53000E9EE2E /* HomePageViewController.swift */,
+				5442934D22E5C4D400E9EE2E /* CustomTableViewCell.swift */,
+			);
+			path = "HomePage ViewController";
+			sourceTree = "<group>";
+		};
+		5442935E22E7102A00E9EE2E /* AboutPage ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5442935C22E7101F00E9EE2E /* AboutPageViewController.swift */,
+			);
+			path = "AboutPage ViewController";
+			sourceTree = "<group>";
+		};
+		5442936722E730E000E9EE2E /* SupportPage ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5442936522E730D800E9EE2E /* SupportPageViewController.swift */,
+			);
+			path = "SupportPage ViewController";
+			sourceTree = "<group>";
+		};
+		5442936A22E748B900E9EE2E /* FAQPage ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5442936822E748B100E9EE2E /* FAQPageViewController.swift */,
+			);
+			path = "FAQPage ViewController";
+			sourceTree = "<group>";
+		};
+		5442937822E74C6500E9EE2E /* ProfilePage ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5442937322E74C1A00E9EE2E /* ProfilePageViewController.swift */,
+			);
+			path = "ProfilePage ViewController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +259,10 @@
 				0374E4AC22E0785100AA7943 /* LaunchScreen.storyboard in Resources */,
 				0374E4A922E0785100AA7943 /* Assets.xcassets in Resources */,
 				0374E4A722E0784F00AA7943 /* Main.storyboard in Resources */,
+				5442937722E74C4800E9EE2E /* ProfilePage.storyboard in Resources */,
+				5442936F22E74B1600E9EE2E /* SupportPage.storyboard in Resources */,
 				0374E4C022E0F86E00AA7943 /* Configure.plist in Resources */,
+				5442937222E74BD300E9EE2E /* AboutPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,12 +277,17 @@
 				5442935222E5E42900E9EE2E /* MenuViewController.swift in Sources */,
 				0374E4A422E0784F00AA7943 /* LoginScreen.swift in Sources */,
 				5442935022E5C53000E9EE2E /* HomePageViewController.swift in Sources */,
+				5442936922E748B100E9EE2E /* FAQPageViewController.swift in Sources */,
 				5442935922E604C000E9EE2E /* CustomTableViewMenuCell.swift in Sources */,
 				5442934E22E5C4D400E9EE2E /* CustomTableViewCell.swift in Sources */,
+				5442937422E74C1A00E9EE2E /* ProfilePageViewController.swift in Sources */,
 				0374E4B622E0ED8D00AA7943 /* PhoneValidationViewController.swift in Sources */,
+				5442936622E730D800E9EE2E /* SupportPageViewController.swift in Sources */,
+				5442935D22E7101F00E9EE2E /* AboutPageViewController.swift in Sources */,
 				0374E4BE22E0EFF200AA7943 /* VerifyAPI.swift in Sources */,
 				0374E4B822E0EE6700AA7943 /* VerificationModel.swift in Sources */,
 				0374E4A222E0784F00AA7943 /* AppDelegate.swift in Sources */,
+				5442936422E72BF800E9EE2E /* CustomNavController.swift in Sources */,
 				5442934A22E5C40500E9EE2E /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +309,22 @@
 				0374E4AB22E0785100AA7943 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5442937022E74BD300E9EE2E /* AboutPage.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5442937122E74BD300E9EE2E /* Base */,
+			);
+			name = AboutPage.storyboard;
+			sourceTree = "<group>";
+		};
+		5442937522E74C4800E9EE2E /* ProfilePage.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5442937622E74C4800E9EE2E /* Base */,
+			);
+			name = ProfilePage.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

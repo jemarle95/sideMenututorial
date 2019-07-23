@@ -344,7 +344,7 @@
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SoO-wx-xyz">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="151"/>
                                                                     </imageView>
                                                                 </subviews>
                                                             </view>
@@ -396,7 +396,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="McL-XH-Zxd">
                         <barButtonItem key="leftBarButtonItem" image="buttonMe" style="plain" id="hbD-Td-6i3">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3fJ-WK-ckB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3fJ-WK-ckB">
                                 <rect key="frame" x="16" y="3" width="70" height="38.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="buttonMe"/>
@@ -405,16 +405,19 @@
                                 </connections>
                             </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="buttonFly" style="plain" id="u4o-Ow-oci">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tae-2M-aDe">
-                                <rect key="frame" x="271" y="3" width="88" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="buttonFly"/>
-                                <connections>
-                                    <segue destination="XgJ-zh-gzS" kind="show" id="L33-lE-yee"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="buttonFly" style="plain" id="u4o-Ow-oci">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tae-2M-aDe">
+                                    <rect key="frame" x="271" y="3" width="88" height="38"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="buttonFly"/>
+                                    <connections>
+                                        <segue destination="XgJ-zh-gzS" kind="show" id="L33-lE-yee"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem title="Item" id="Edd-Kk-JuG"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="mapKit" destination="RdB-h0-VIn" id="Gt6-1q-Dqe"/>
@@ -455,7 +458,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="9rY-80-3zS" kind="show" identifier="toProfile" trigger="accessoryAction" id="ke2-sT-463"/>
+                                            <segue destination="Ouy-C4-Ccs" kind="show" identifier="toProfile" trigger="accessoryAction" id="ke2-sT-463"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="supportID" textLabel="FVr-Nn-sDi" style="IBUITableViewCellStyleDefault" id="U7t-sX-OCh" customClass="CustomTableViewMenuCell" customModule="sideMenututorial" customModuleProvider="target">
@@ -534,6 +537,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mh9-4y-h4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1805.5999999999999" y="833.43328335832086"/>
+        </scene>
+        <!--Profile Page View Controller-->
+        <scene sceneID="qnI-Ko-ojz">
+            <objects>
+                <viewController id="Ouy-C4-Ccs" customClass="ProfilePageViewController" customModule="sideMenututorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fHT-Oy-eIp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the profile page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhe-6a-B3V">
+                                <rect key="frame" x="146" y="254" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Xuc-bN-kAh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Awg-82-BhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2777" y="1503"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gzk-Xc-7uN">
@@ -666,14 +693,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpd-y9-oq3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2638" y="950"/>
-        </scene>
-        <!--ProfilePage-->
-        <scene sceneID="59b-sz-07x">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ProfilePage" id="9rY-80-3zS" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J0H-4X-PLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2777" y="1503"/>
         </scene>
     </scenes>
     <resources>

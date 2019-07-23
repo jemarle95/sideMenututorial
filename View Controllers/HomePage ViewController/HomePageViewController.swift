@@ -14,11 +14,7 @@ class HomePageViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     @IBOutlet var mapKit: MKMapView!
-    
-    @IBOutlet weak var menuButton: UIButton!
-    
-    @IBOutlet weak var homepageButton: UIButton!
-    
+
     var reuseTableViewID = "tableViewCellID"
 
     override func viewDidLoad() {
@@ -29,19 +25,21 @@ class HomePageViewController: UIViewController {
         tableView.dataSource = self
         tableView.estimatedRowHeight = 120
         tableView.tableFooterView = UIView()
+        
+       
     }
     
     // Hides navigation Bar from user.
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    
-    // Hides navigation Bar from user.
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
-        navigationController?.setNavigationBarHidden(false, animated: false)
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(true)
+//        navigationController?.setNavigationBarHidden(true, animated: true)
+//    }
+//
+//    // Hides navigation Bar from user.
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(true)
+//        navigationController?.setNavigationBarHidden(false, animated: false)
+//    }
     
 
 }

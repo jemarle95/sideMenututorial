@@ -12,6 +12,7 @@ class MenuViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
 
+    var customNav = CustomNavController()
     
     var profileReuseID = "profileID"
     var supportReuseID = "supportID"
@@ -22,11 +23,30 @@ class MenuViewController: UIViewController {
         // shows navigation Bar from user allowing them to go back
         self.navigationController?.isNavigationBarHidden = false
         
+        // sets the back button
+        customNav.setUpBackBarButton()
+        
+        
+        
         tableView.dataSource = self
         tableView.delegate = self
+        
+        navigationItem.title = "Main Menu"
 
-    }
-
+        }
+    
+    //    func setUpBackBarButton() {
+//
+//        let leftBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "back"), style: .done, target: self, action: #selector(backButtonTapped))
+//
+//        self.navigationItem.leftBarButtonItem = leftBarButtonItem
+//    }
+//
+//    @objc public func backButtonTapped(_ sender: UIBarButtonItem) {
+//        self.navigationController?.popViewController(animated: true)
+//    }
+//
+    
 }
 
 extension MenuViewController: UITableViewDelegate { }
@@ -35,7 +55,7 @@ extension MenuViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         // show sections with the amount of items in array
-       return 2
+       return 4
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
